@@ -2,6 +2,7 @@ from django.conf.urls import url
 from rest_framework.urlpatterns import format_suffix_patterns
 from users import views
 
+app_name = 'users'
 
 urlpatterns = [
     url(r'^users/$', views.UserList.as_view(), name='user-list'),
